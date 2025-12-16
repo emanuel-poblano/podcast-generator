@@ -1,14 +1,7 @@
-FROM ubuntu:24.04
+FROM python:3.12-slim
 
-RUN apt-get update && apt-get install -y \
-    python3 \
-    python3-pip \
-    python3-dev \
-    gcc \
-    libyaml-dev \
-    git \
-    && pip3 install --no-cache-dir PyYAML \
-    && apt-get clean \
+RUN apt-get update && apt-get install -y git \
+    && pip install --no-cache-dir PyYAML \
     && rm -rf /var/lib/apt/lists/*
 
 COPY feed.py /usr/bin/feed.py
