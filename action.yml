@@ -1,6 +1,6 @@
 name: "YAML Feed Generator"
 author: "Emanuel Poblano"
-decription: "Generate podcast feed from YAML file"
+description: "Generate podcast feed from YAML file"
 runs:
   using: "docker"
   image: "Dockerfile"
