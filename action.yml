@@ -1,6 +1,6 @@
 name: "YAML Feed Generator"
 author: "Emanuel Poblano"
-decription: "Action that generates a podcast feed from a YAML file, hosted by Github pages."
+decription: "Action that generates a feed from a YAML file"
 runs:
   using: "docker"
   image: "Dockerfile"
